@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: '';
+}
+
+table {
+    width: 900px; /* Ajuste o tamanho desejado da tabela */
+    border-collapse: collapse;
+    margin-top: 20px; /* Ajuste a margem superior conforme necessário */
+}
+
+th, td {
+    border: 1px solid #c1c1c1;
+    padding: 8px;
+    text-align: left;
+}
