@@ -16,3 +16,8 @@ th, td {
     padding: 8px;
     text-align: left;
 }
+
+span {
+    color: #0069c2;
+    background-color: #f2f1f1;
+}
