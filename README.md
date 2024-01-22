@@ -17,4 +17,3 @@ O objetivo principal deste projeto é criar um espaço centralizado para consoli
 - HTML
 - CSS
 - JavaScript
-- (Adicione outras tecnologias conforme necessário)
