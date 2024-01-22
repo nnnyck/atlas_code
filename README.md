@@ -1,4 +1,4 @@
-# Nome do Seu Projeto
+# Atlas Code
 
 ## Descrição
 Este projeto é uma reunião de todo o meu aprendizado, onde estou construindo um site online para documentar e aplicar os conhecimentos adquiridos ao longo do tempo. Embora esteja em estágio inicial, estou trabalhando de forma cuidadosa para garantir uma implementação sólida e estou constantemente revisando e estudando para aprimorar o site.
