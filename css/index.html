@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - 1</title>
+
+</head>
+<body>
+    
+    <h1>Como adicionar Css ao código</h1>
+    <p>Quando um Navegador lê a cascata de estilo, ele formata o documento HTML de acordo com os estilos definidos pelo CSS.</p>
+
+    <hr>
+
+    <h2>São 3 Formas de Adicionar o CSS</h2>
+    <p>As 3 formas de adicionar o css são:</p>
+    <ul>
+        <li>Css Externo</li>
+        <li>Css Interno</li>
+        <li>Css em Linha</li>
+    </ul>
+
+    <hr>
+
+    <h2>Css Externo</h2>
+    <p>É a forma mais recomendada de se aplicar CSS. Essa forma ajuda a separar, deixa o código mais limpo e de fácil manutenção.</p>
+    <p>Cada documento HTML deve conter a referência para o arquivo .css, que é dado através da tag &lt;link&gt;</p>
+
+    <div>
+    <h3>Exemplo</h3>
+    <p>Estilos externos são referênciados com o elemento &lt;link&gt; que se encontra no topo da página e dentro da seção &lt;head&gt;:</p>
+        <span>ESPAÇO RESERVADO PARA EXEMPLO</span>
+    </div>
+    <p>Uma estilização externa deve ser salva com qualquer nome e .css após o nome.</p>
+    <p>Um arquivo .css NÃO deve conter texto HTML dentro.</p>
+    <div>
+    <h3>"style.css"</h3>
+        <span>ESPAÇO RESERVADO PARA EXEMPLO</span>
+    </div>
+
+    <hr><br><hr>
+
+    <h2>Css Interno</h2>
+    <p>A forma interna de css pode ser usada se uma página conter um único estilo.</p>
+    <p>A forma interna de css é definida dentro do elemento &lt;style&gt;, que está dentro da seção &lt;head&gt; de uma página HTML:</p>
+    <div>
+        <h3>Exemplo</h3>
+        <span>ESPAÇO RESERVADO PARA EXEMPLO</span>
+    </div>
+
+    <hr><br>
+
+    <h2>Css em Linha</h2>
+    <p>O css em linha é aplicado em situações onde é necessário aplicar estilos em um único elemento.</p>
+    <p>Paraa usar os estilos em linha, adicione o atributo (style) no devido elemento. Pode conter qualquer propriedade CSS:</p>
+    <div>
+        <h3>Exemplo</h3>
+        <span>ESPAÇO RESERVADO PARAA EXEMPLO</span>
+    </div>
+
+    <hr><br>
+
+    <h2>Ordem de Cascata</h2>
+    <p>Os estilos css tem uma certa ordem de prioridade que é interpretada pelo navegador.</p>
+    <ol>
+        <li>Css em Linha</li>
+        <li>Css Interno</li>
+        <li>Css Externo</li>
+        <br>
+        <li>Css Padrão do navegador </li>
+    </ol>
+    <p>Assim o código css com a maior prioridade (1) irá sobrepor os de menor prioridade (2,3 e 4).</p>
+
+</body>
+</html>
