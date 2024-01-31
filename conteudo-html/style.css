@@ -1,0 +1,94 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#left-anchor a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    display: block;
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#theme-button {
+    background-color: #555;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Add more styling as needed */
+
+
+table {
+    width: 900px; /* Ajuste o tamanho desejado da tabela */
+    border-collapse: collapse;
+    margin-top: 20px; /* Ajuste a margem superior conforme necessário */
+}
+
+th, td {
+    border: 1px solid #c1c1c1;
+    padding: 8px;
+    text-align: left;
+}
+
+span {
+    color: #0069c2;
+    background-color: #f2f1f1;
+}
