@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <title>CSS - Propriedades</title>
+
+</head>
+<body>
+    
+    <header>
+        <a href="../index.html">voltar</a>
+        <a href="./propriedades.html">css 1</a>
+        <a href="./comoadd.html">css 2</a>
+        <a href="./seletores.html">css 3</a>
+    </header>
+    
+    <h2> Layout e Posicionamento </h2>
+    <table>
+        <tr>
+            <th>Propriedade</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><span>display</span></td>
+            <td>A propriedade <strong>display</strong> controla como um elemento é renderizado no layout. Ela define o tipo de caixa de layout que um elemento gera, afetando seu modelo de formatação e a interação com outros elementos. Alguns valores comuns incluem block, inline, flex, grid, entre outros.</td>
+        </tr>
+        <tr>
+            <td><span>position</span></td>
+            <td>A propriedade <strong>position</strong> determina o método de posicionamento de um elemento em relação ao seu contêiner pai ou à página. Alguns valores possíveis são static, relative, absolute, fixed, e sticky. Cada valor afeta o comportamento de posicionamento de maneira diferente.</td>
+        </tr>
+        <tr>
+            <td><span>top</span>, <span>right</span>, <span>bottom</span>, <span>left</span></span></td>
+            <td>Essas propriedades são usadas em <strong>conjunto com a propriedade position</strong> para especificar a posição exata de um elemento. Elas definem a distância entre as bordas do elemento e as bordas do seu contêiner pai ou da janela de visualização, dependendo do tipo de posicionamento.</td>
+        </tr>
+        <tr>
+            <td><span>float</span></td>
+            <td>A propriedade <strong>float</strong> é usada para especificar se um elemento deve flutuar para a direita ou para a esquerda dentro do seu contêiner. Elementos flutuantes são removidos do fluxo normal do documento e posicionados ao lado de outros elementos flutuantes ou na borda do contêiner.</td>
+        </tr>
+        <tr>
+            <td><span>margin</span></td>
+            <td>A propriedade <strong>margin</strong> define a margem externa de um elemento. Ela especifica o espaço ao redor do elemento, criando espaçamento entre o elemento e seus vizinhos. A propriedade pode ser configurada com valores individuais para cada lado ou com um único valor para todos os lados.</td>
+        </tr>
+        <tr>
+            <td><span>padding</span></td>
+            <td>A propriedade <strong>padding</strong> define o preenchimento interno de um elemento. Ela especifica o espaço entre o conteúdo do elemento e suas bordas. Assim como margin, a propriedade pode ser configurada com valores individuais para cada lado ou com um único valor para todos os lados.</td>
+        </tr>
+        <tr>
+            <td><span>width</span></td>
+            <td>A propriedade <strong>width</strong> define a largura de um elemento. Ela determina a largura da caixa de conteúdo do elemento. Pode ser especificada em pixels, porcentagens, unidades relativas ou outras unidades de medida. Essa propriedade influencia a largura do elemento em relação ao seu contêiner.</td>
+        </tr>
+        <tr>
+            <td><span>height</span></td>
+            <td>A propriedade <strong>height</strong> define a altura de um elemento. Ela determina a altura da caixa de conteúdo do elemento. Assim como a propriedade width, pode ser especificada em pixels, porcentagens, unidades relativas ou outras unidades de medida. Essa propriedade influencia a altura do elemento em relação ao seu contêiner.</td>
+        </tr>
+        <tr>
+            <td><span>box-sizing</span></td>
+            <td>A propriedade <strong>box-sizing</strong> determina como a largura e a altura de um elemento são calculadas. O valor padrão é content-box, onde a largura e a altura representam apenas o conteúdo. O valor border-box inclui também as bordas e o preenchimento no cálculo, facilitando o controle das dimensões totais do elemento.</td>
+        </tr>
+        <tr>
+            <td><span>clear</span></td>
+            <td>A propriedade <strong>clear</strong> é usada para controlar como os elementos devem se comportar em relação a elementos flutuantes. Se um elemento tiver clear definido, ele será movido abaixo de qualquer elemento flutuante à sua esquerda, à sua direita ou em ambos os lados.</td>
+        </tr>
+    </table>
+    <br><br>
+
+    <h2> Tipografia </h2>
+    <table>
+        <tr>
+            <th>Propriedade</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><span>font-family</span></td>
+            <td>A propriedade <strong>font-family</strong> define a família de fontes a ser usada para um elemento. Pode ser configurada para uma fonte específica ou uma lista de fontes, permitindo que o navegador use a primeira fonte disponível.</td>
+        </tr>
+        <tr>
+            <td><span>font-size</span></td>
+            <td>A propriedade <strong>font-size</strong> determina o tamanho da fonte do texto. Pode ser especificada em pixels, em unidades relativas como em ou rem, ou em porcentagens do tamanho da fonte do elemento pai.</td>
+        </tr>
+        <tr>
+            <td><span>font-weight</span></td>
+            <td>A propriedade <strong>font-weight</strong> especifica a espessura da fonte. Valores comuns incluem números de 100 a 900, onde 400 é geralmente considerado normal e 700 é geralmente considerado negrito.</td>
+        </tr>
+        <tr>
+            <td><span>line-height</span></td>
+            <td>A propriedade <strong>line-height</strong> define a altura da linha do texto. Pode ser especificada como um número, um valor multiplicativo, em unidades relativas ou em porcentagem.</td>
+        </tr>
+        <tr>
+            <td><span>text-align</span></td>
+            <td>A propriedade <strong>text-align</strong> define a alinhamento horizontal do texto dentro de um elemento. Valores possíveis incluem left, right, center e justify.</td>
+        </tr>
+        <tr>
+            <td><span>text-decoration</span></td>
+            <td>A propriedade <strong>text-decoration</strong> controla a decoração do texto, como sublinhado ou tachado. Pode ser configurada para valores como none, underline, overline, e line-through.</td>
+        </tr>
+        <tr>
+            <td><span>text-transform</span></td>
+            <td>A propriedade <strong>text-transform</strong> especifica como o texto deve ser capitalizado. Pode ser configurada para valores como uppercase, lowercase e capitalize.</td>
+        </tr>
+    </table>
+    <br><br>
+
+
+    <h2> Cores e Fundo </h2>
+    <table>
+        <tr>
+            <th>Propriedade</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><span>background-color</span></td>
+            <td>A propriedade <strong>background-color</strong> define a cor de fundo de um elemento. Pode ser especificada utilizando nomes de cores, códigos hexadecimais, rgb ou hsl.</td>
+        </tr>
+        <tr>
+            <td><span>background-image</span></td>
+            <td>A propriedade <strong>background-image</strong> define uma imagem de fundo para um elemento. A imagem pode ser especificada usando um caminho local ou uma URL.</td>
+        </tr>
+        <tr>
+            <td><span>background-repeat</span></td>
+            <td>A propriedade <strong>background-repeat</strong> controla se uma imagem de fundo deve ser repetida (tiled) ao longo do eixo horizontal, vertical ou ambos. Valores comuns incluem repeat, repeat-x, repeat-y e no-repeat.</td>
+        </tr>
+        <tr>
+            <td><span>background-position</span></td>
+            <td>A propriedade <strong>background-position</strong> define a posição inicial de uma imagem de fundo. Pode ser configurada utilizando valores como top, bottom, left, right, center ou coordenadas em porcentagem ou pixels.</td>
+        </tr>
+        <tr>
+            <td><span>color</span></td>
+            <td>A propriedade <strong>color</strong> define a cor do texto dentro de um elemento. Pode ser especificada utilizando nomes de cores, códigos hexadecimais, rgb ou hsl.</td>
+        </tr>
+    </table>
+    <br><br>
+
+    <h2> Borda </h2>
+    <table>
+        <tr>
+            <th>Propriedade</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><span>border</span></td>
+            <td>A propriedade <strong>border</strong> é uma propriedade abreviada que define a largura, o estilo e a cor da borda de um elemento em uma única declaração. Pode incluir valores como largura, estilo (por exemplo, solid, dashed), e cor.</td>
+        </tr>
+        <tr>
+            <td><span>border-color</span></td>
+            <td>A propriedade <strong>border-color</strong> define a cor da borda de um elemento. Pode ser especificada utilizando nomes de cores, códigos hexadecimais, rgb ou hsl.</td>
+        </tr>
+        <tr>
+            <td><span>border-style</span></td>
+            <td>A propriedade <strong>border-style</strong> define o estilo da borda de um elemento. Pode incluir valores como solid, dashed, dotted, double, entre outros.</td>
+        </tr>
+        <tr>
+            <td><span>border-width</span></td>
+            <td>A propriedade <strong>border-width</strong> define a largura da borda de um elemento. Pode ser especificada utilizando valores em pixels, em, rem ou outras unidades de medida.</td>
+        </tr>
+        <tr>
+            <td><span>border-radius</span></td>
+            <td>A propriedade <strong>border-radius</strong> define o raio dos cantos de um elemento, criando bordas arredondadas. Pode ser especificada para cada canto individualmente ou para todos os cantos ao mesmo tempo.</td>
+        </tr>
+        <tr>
+            <td><span>outline</span></td>
+            <td>A propriedade <strong>outline</strong> é uma propriedade abreviada que define a largura, o estilo e a cor da borda externa de um elemento sem afetar o layout. É frequentemente utilizada para destacar elementos, mas não afeta a posição ou tamanho real do elemento.</td>
+        </tr>
+    </table>
+    <br><br>
+
+    <h2> Espaçamento e Alinhamento </h2>
+    <table>
+        <tr>
+            <th>Propriedade</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><span>margin</span></td>
+            <td>A propriedade <strong>margin</strong> define a margem externa de um elemento. Ela especifica o espaço ao redor do elemento, criando espaçamento entre o elemento e seus vizinhos. A propriedade pode ser configurada com valores individuais para cada lado ou com um único valor para todos os lados.</td>
+        </tr>
+        <tr>
+            <td><span>padding</span></td>
+            <td>A propriedade <strong>padding</strong> define o preenchimento interno de um elemento. Ela especifica o espaço entre o conteúdo do elemento e suas bordas. Assim como margin, a propriedade pode ser configurada com valores individuais para cada lado ou com um único valor para todos os lados.</td>
+        </tr>
+        <tr>
+            <td><span>text-align</span></td>
+            <td>A propriedade <strong>text-align</strong> define o alinhamento horizontal do texto dentro de um elemento. Valores possíveis incluem left, right, center e justify.</td>
+        </tr>
+        <tr>
+            <td><span>vertical-align</span></td>
+            <td>A propriedade <strong>vertical-align</strong> define o alinhamento vertical de um elemento em relação ao seu contêiner pai. Pode ser configurada para valores como top, middle, bottom ou uma unidade de medida.</td>
+        </tr>
+    </table>
+    <br><br>
+
+    <h2> Flexbox e Grid </h2>
+    <table>
+        <tr>
+            <th>Propriedade</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><span>display: flex</span></td>
+            <td>A propriedade <strong>display: flex</strong> transforma um contêiner em um contêiner flexível, permitindo o layout flexível dos itens filhos dentro dele. Os itens flexíveis podem ser alinhados e distribuídos de maneira eficiente, facilitando o design responsivo.</td>
+        </tr>
+        <tr>
+            <td><span>flex-direction</span></td>
+            <td>A propriedade <strong>flex-direction</strong> define a direção dos eixos principal e transversal em um contêiner flexível. Pode ser configurada para row, row-reverse, column ou column-reverse.</td>
+        </tr>
+        <tr>
+            <td><span>justify-content</span></td>
+            <td>A propriedade <strong>justify-content</strong> alinha os itens flexíveis ao longo do eixo principal de um contêiner flexível. Pode ser configurada para valores como flex-start, flex-end, center, space-between e space-around.</td>
+        </tr>
+        <tr>
+            <td><span>align-items</span></td>
+            <td>A propriedade <strong>align-items</strong> alinha os itens flexíveis ao longo do eixo transversal de um contêiner flexível. Pode ser configurada para valores como flex-start, flex-end, center, baseline e stretch.</td>
+        </tr>
+        <tr>
+            <td><span>grid-template-columns</span></td>
+            <td>A propriedade <strong>grid-template-columns</strong> define as colunas em um layout de grade. Pode ser configurada com valores fixos, flexíveis ou com palavras-chave como auto.</td>
+        </tr>
+        <tr>
+            <td><span>grid-template-rows</span></td>
+            <td>A propriedade <strong>grid-template-rows</strong> define as linhas em um layout de grade. Pode ser configurada com valores fixos, flexíveis ou com palavras-chave como auto.</td>
+        </tr>
+    </table>
+    <br><br>
+
+    <h2> Animações e Transições </h2>
+    <table>
+        <tr>
+            <th>Propriedade</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><span>animation</span></td>
+            <td>A propriedade <strong>animation</strong> é uma propriedade abreviada que combina várias propriedades relacionadas a animações em uma única declaração. Permite definir animações com keyframes, duração, temporização, iteração e modo de preenchimento.</td>
+        </tr>
+        <tr>
+            <td><span>transition</span></td>
+            <td>A propriedade <strong>transition</strong> é uma propriedade abreviada que define as transições de propriedades CSS específicas durante uma mudança de estado. Permite especificar a propriedade a ser animada, a duração, a função de temporização e um atraso opcional.</td>
+        </tr>
+        <tr>
+            <td><span>@keyframes</span></td>
+            <td>A regra <strong>@keyframes</strong> é usada para definir as etapas de uma animação. Ela permite especificar como uma propriedade CSS deve evoluir ao longo do tempo. Os keyframes são usados em conjunto com a propriedade animation.</td>
+        </tr>
+    </table>
+    <br><br>
+
+    <h2> Outros </h2>
+    <table>
+        <tr>
+            <th>Propriedade</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><span>cursor</span></td>
+            <td>A propriedade <strong>cursor</strong> define o tipo de cursor que será exibido quando o mouse estiver sobre um elemento. Pode ser configurada para valores como pointer, default, crosshair, entre outros.</td>
+        </tr>
+        <tr>
+            <td><span>opacity</span></td>
+            <td>A propriedade <strong>opacity</strong> define a opacidade de um elemento, variando de 0 (totalmente transparente) a 1 (totalmente opaco).</td>
+        </tr>
+        <tr>
+            <td><span>box-shadow</span></td>
+            <td>A propriedade <strong>box-shadow</strong> cria uma sombra em torno de um elemento. Pode ser configurada com valores para a cor, deslocamento, propagação e tamanho da sombra.</td>
+        </tr>
+        <tr>
+            <td><span>z-index</span></td>
+            <td>A propriedade <strong>z-index</strong> controla a ordem de empilhamento de elementos em relação uns aos outros no eixo Z. Elementos com um valor de z-index maior serão exibidos acima dos elementos com valores menores.</td>
+        </tr>
+        <tr>
+            <td><span>transform</span></td>
+            <td>A propriedade <strong>transform</strong> aplica transformações 2D ou 3D a um elemento. Pode ser usada para realizar rotações, escalas, translações e inclinações.</td>
+        </tr>
+    </table>
+    <br><br>
+
+    
+
+        <!--<h2> Título </h2>
+    <table>
+        <tr>
+            <th>Elemento</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><span>&lt;head&gt;</span></td>
+            <td>O elemento <b></b></td>
+        </tr>
+        <tr>
+            <td><span>&lt;body&gt;</span></td>
+            <td>O elemento <b></b></td>
+        </tr>
+    </table>
+    <br><br>-->
+
+</body>
+</html>
