@@ -1,56 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Atlas Code - HTML Tags</title>
 
-    <title>Documentação HTML</title>
+    <link rel="stylesheet" href="./css/tags.css">
+
 </head>
 <body>
 
-    <header>
-        <div id="left-anchor"><a href="../index.html">Atlas Code</a></div>
-        <nav>
-            <ul>
-                <li class="dropdown">
-                    <a href="#">HTML</a>
-                    <ul class="dropdown-content">
-                        <li><a href="../conteudo-html/elementos.html">Tags</a></li>
-                        <li><a href=""></a></li>
-                        <!-- Adicione mais páginas conforme necessário -->
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="../conteudo-css/comoadd.html">CSS</a>
-                    <ul class="dropdown-content">
-                        <li><a href="../conteudo-css/propriedades.html">Tags</a></li>
-                        <li><a href="../conteudo-css/seletores.html">Seletores</a></li>
-                        <!-- Adicione mais páginas conforme necessário -->
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#">JavaScript</a>
-                    <ul class="dropdown-content">
-                        <li><a href="">Página 1</a></li>
-                        <li><a href="">Página 2</a></li>
-                        <!-- Adicione mais páginas conforme necessário -->
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-        <button id="theme-button">Tema</button>
-    </header>
+<header>
 
-    <h1>Elementos HTML</h1>
-    <p>Esta página lista de forma organizada e mais fácil de compreender os elementos html que fui aprendendo.</p>
-    <br>
+</header>
 
-    <h2>Elementos Básicos</h2>
+<main>
+<!-- Contaainer -->
+<div class="container">  
+    <nav id="left">1
+
+    </nav>
+
+    <div id="middle">
+
+    <h2>Lista - HTML</h2>
+    <hr><br><br>
     <table>
         <tr>
             <th>Elemento</th>
             <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><span>&lt;!-- // --&gt;</span></td>
+            <td>Esse elemento representa um <b>COMENTÁRIO</b> no código html.</td>
         </tr>
         <tr>
             <td><span>DOCTYPE</span></td>
@@ -59,19 +41,6 @@
         <tr>
             <td><span>&lt;html&gt;</span></td>
             <td>O elemento <b>HTML</b> representa a estrutura total do código para o navegador entender como interpretar. Todos os elementos devem estar dentro dessa tag.</td>
-        </tr>
-        <tr>
-            <td><span>&lt;!-- // --&gt;</span></td>
-            <td>Esse elemento representa um <b>COMENTÁRIO</b> no código html.</td>
-        </tr>
-    </table>
-    <br><br>
-
-    <h2> Elementos de Composição Básica </h2>
-    <table>
-        <tr>
-            <th>Elemento</th>
-            <th>Descrição</th>
         </tr>
         <tr>
             <td><span>&lt;head&gt;</span></td>
@@ -93,15 +62,7 @@
             <td><span>&lt;body&gt;</span></td>
             <td>O elemento <b>BODY</b> representa o conteúdo visível na tela.</td>
         </tr>
-    </table>
-    <br><br>
 
-    <h2> Separação de Conteúdo </h2>
-    <table>
-        <tr>
-            <th>Elemento</th>
-            <th>Descrição</th>
-        </tr>
         <tr>
             <td><span>&lt;header&gt;</span></td>
             <td>O elemento <b>HEADER</b> representa o cabeçalho da página. Geralmente, ele contém informações como logotipo, título, navegação e outros elementos relacionados ao início da página ou seção.</td>
@@ -118,15 +79,6 @@
             <td><span>&lt;footer&gt;</span></td>
             <td>O elemento <b>FOOTER</b> representa o rodapé da página. Normalmente um rodapé contém informações sobre o autor da seção de dados, direitos autorais ou links para documentos relacionados.</td>
         </tr>
-    </table>
-    <br><br>
-
-    <h2> Elementos de Layout </h2>
-    <table>
-        <tr>
-            <th>Elemento</th>
-            <th>Descrição</th>
-        </tr>
         <tr>
             <td><span>&lt;div&gt;</span></td>
             <td>O elemento <b>DIV</b> é um elemento genérico que é frequentemente usado para criar contêineres ou divisões em uma página HTML. Ele é utilizado para agrupar e organizar outros elementos, permitindo uma estruturação mais clara e facilitando a aplicação de estilos CSS.</td>
@@ -135,22 +87,13 @@
             <td><span>&lt;nav&gt;</span></td>
             <td>O elemento <b>NAV</b> é um elemento específico para marcar a seção de navegação em uma página. Ele é utilizado para agrupar links de navegação, como menus ou barras de navegação. O uso do &lt;nav&gt; ajuda a indicar semanticamente que a seção contém elementos de navegação.</td>
         </tr>
-    </table>
-    <br><br>
-
-    <h2> Elementos de Texto </h2>
-    <table>
-        <tr>
-            <th>Elemento</th>
-            <th>Descrição</th>
-        </tr>
         <tr>
             <td>
-                <span>&lt;h1&gt;</span>,<span>&lt;h2&gt;</span>,
+                <span>&lt;h1&gt;</span> <span>&lt;h2&gt;</span> 
             <br>
-                <span>&lt;h3&gt;</span>,<span>&lt;h4&gt;</span>,
+                <span>&lt;h3&gt;</span> <span>&lt;h4&gt;</span> 
             <br>
-                <span>&lt;h5&gt;</span>,<span>&lt;h6&gt;</span>
+                <span>&lt;h5&gt;</span> <span>&lt;h6&gt;</span>
             </td>
             <td>Os elementos <b>H(123456)</b> representam seis niveis de títulos, começando pelo maior (h1) até o menor (h6).</td>
         </tr>
@@ -161,15 +104,6 @@
         <tr>
             <td><span>&lt;p&gt;</span></td>
             <td>O elemento <b>P</b> representa um parágrafo e é onde são escritos textos.</td>
-        </tr>
-    </table>
-    <br><br>
-
-    <h2> Formatações de Textos </h2>
-    <table>
-        <tr>
-            <th>Elemento</th>
-            <th>Descrição</th>
         </tr>
         <tr>
             <td><span>&lt;strong&gt;</span>,<span>&lt;b&gt;</span></td>
@@ -187,15 +121,6 @@
             <td><span>&lt;strike&gt;</span></td>
             <td>O elemento <b><strike>STRIKE</strike></b> representa uma formatação de texto que consiste em colocar uma linha nas palavras escritas.</td>
         </tr>
-    </table>
-    <br><br>
-
-    <h2> Elementos de Experiência do Usuário </h2>
-    <table>
-        <tr>
-            <th>Elemento</th>
-            <th>Descrição</th>
-        </tr>
         <tr>
             <td><span>&lt;a&gt;</span></td>
             <td>O elemento <b>A</b> (âncora) com o atributo href cria-se um hiperligação nas páginas web, arquivos, endereços de emails, ligações na mesma página ou endereços na URL. O conteúdo dentro de cada &lt;a&gt; precisará indicar o destino do link.</td>
@@ -212,15 +137,6 @@
             <td><span>&lt;img&gt;</span></td>
             <td>O elemento <b>IMG</b> representa a inserção de imagem no documento. Ele é um elemento vazio, o que significa que não possui uma tag de fechamento.</td>
         </tr>
-    </table>
-    <br><br>
-
-    <h2> Listas Ordenadas e Não Ordenadas </h2>
-    <table>
-        <tr>
-            <th>Elemento</th>
-            <th>Descrição</th>
-        </tr>
         <tr>
             <td><span>&lt;ul&gt;</span></td>
             <td>O elemento <b>UL</b> é um elemento pai e é a forma de criar uma lista desordenada. Caracteristicamente, os itens em uma lista desordenada são exibidos com um marcador que pode ter várias formas, como um ponto, um círculo, ou um quadrado.</td>
@@ -232,15 +148,6 @@
         <tr>
             <td><span>&lt;li&gt;</span></td>
             <td>O elemento <b>LI</b> é usado para representar um item que faz parte de uma lista. Este item deve estar contido em um elemento pai: uma lista ordenada (&lt;ol&gt;) ou uma lista desordenada (&lt;ul&gt;).</td>
-        </tr>
-    </table>
-    <br><br>
-
-    <h2> Elementos de Tabela </h2>
-    <table>
-        <tr>
-            <th>Elemento</th>
-            <th>Descrição</th>
         </tr>
         <tr>
             <td><span>&lt;table&gt;</span></td>
@@ -257,15 +164,6 @@
         <tr>
             <td><span>&lt;th&gt;</span></td>
             <td>O elemento <b>TH</b> efine uma célula de cabeçalho em uma linha. Geralmente, é usado nas primeiras linhas (ou em grupos de linhas) para rotular as colunas.</td>
-        </tr>
-    </table>
-    <br><br>
-
-    <h2> Formulários </h2>
-    <table>
-        <tr>
-            <th>Elemento</th>
-            <th>Descrição</th>
         </tr>
         <tr>
             <td><span>&lt;form&gt;</span></td>
@@ -292,24 +190,11 @@
             <td>O elemento <b>LABEL</b> é usado para associar um rótulo descritivo a um campo de formulário, melhorando a acessibilidade e a usabilidade.</td>
         </tr>
     </table>
-    <br><br>
 
-    <!--<h2> Título </h2>
-    <table>
-        <tr>
-            <th>Elemento</th>
-            <th>Descrição</th>
-        </tr>
-        <tr>
-            <td><span>&lt;head&gt;</span></td>
-            <td>O elemento <b></b></td>
-        </tr>
-        <tr>
-            <td><span>&lt;body&gt;</span></td>
-            <td>O elemento <b></b></td>
-        </tr>
-    </table>
-    <br><br>-->
+    </div>
+    <div id="right">3</div>
+</div>
+</main>
 
 </body>
 </html>
