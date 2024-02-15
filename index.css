@@ -1,76 +1,128 @@
+:root {
+    --main-blue-color: #407AFF;
+
+    /* --h1-size: 24px;
+    --h2-size: 18px;
+    --h3-size: 16px;
+    --h4-size: 14px;
+    --h5-size: 12px;
+    --h6-size: 10px; */
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+	/* font-size: 100%; */
+	/* font: inherit; */
+	/* vertical-align: baseline; */
 }
 
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
+body{
+    height: 100vh; 
+    margin: 20px 100px;
+    font-family: "system-ui", sans-serif;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
+    background-color: var(--main-blue-color); /* Cor de fundo do cabeçalho */
+    border-radius: 25px;
+    color: #fff; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno do cabeçalho */
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-#left-anchor a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.5em;
-}
-
-nav ul {
+  }
+  
+  .logo {
+    font-size: 32px; /* Tamanho da fonte da logo */
+    font-weight: bold; /* Negrito */
+  }
+  
+  nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block; /* Para alinhar os itens na horizontal */
+    margin-left: 20px; /* Espaçamento entre os itens */
+  }
+  
+  nav ul li:first-child {
+    margin-left: 0; /* Remove o espaçamento à esquerda do primeiro item */
+  }
+  
+  nav ul li a {
+    color: #fff; /* Cor do texto dos links */
+    text-decoration: none; /* Remove sublinhado padrão dos links */
+    font-size: 24px; /* Tamanho da fonte dos links */
+  }
+
+
+
+
+.apresentation {
     display: flex;
+    justify-content: space-between;
 }
 
-nav li {
-    margin-right: 15px;
+.left, .middle {
+    width: 33%;
 }
 
-nav a {
-    text-decoration: none;
-    color: #fff;
+.right {
+  width: 25%;
 }
 
-/* Dropdown styles */
-.dropdown {
-    position: relative;
+/* ---------- INICIO DA DIV ESQUERDA ---------- */
+.left {
+  display: flex;
+  flex-direction: column;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+.left h1 {
+  font-size: 2.5rem;
+  margin: 75px 0 0 0;
 }
 
-.dropdown-content li {
-    display: block;
-    padding: 10px;
+.left p {
+  font-size: 1.75rem;
+  margin: 25px 0 0 0;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+/* ---------- FINAL DA DIV ESQUERDA ---------- */
+
+.middle {
+    overflow: hidden;
 }
 
-#theme-button {
-    background-color: #555;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
+/* ---------- INIICIO DA DIV DIREITA ---------- */
+.apresentation .right {
+  display: flex;
 }
 
-/* Add more styling as needed */
+.apresentation .right ol {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+/* ---------- FINAL DA DIV DIREITA ---------- */
+
+dotlottie-player {
+    width: 100%; /* Ajusta a largura da imagem para 100% da div */
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 100%; /* Garante que a imagem não ultrapasse os limites da div */
+  }
+
+
+
+.apresentation-codes {
+    height: 650px;
+    background-color: #FBF8F8;
+}
