@@ -25,9 +25,10 @@ body{
 }
 
 header {
-    background-color: var(--main-blue-color); /* Cor de fundo do cabeçalho */
-    border-radius: 25px;
-    color: #fff; /* Cor do texto */
+  border-bottom: solid 1px;
+    background-color: white; /* Cor de fundo do cabeçalho */
+    /* border-radius: 25px; */
+    color: black; /* Cor do texto */
     padding: 10px 20px; /* Espaçamento interno do cabeçalho */
     display: flex;
     justify-content: space-between;
@@ -37,12 +38,12 @@ header {
   .logo {
     font-size: 32px; /* Tamanho da fonte da logo */
     font-weight: bold; /* Negrito */
+    margin: 0 0 0 25px;
   }
   
   nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 0 25px 0 0;
   }
   
   nav ul li {
@@ -55,7 +56,7 @@ header {
   }
   
   nav ul li a {
-    color: #fff; /* Cor do texto dos links */
+    color: black; /* Cor do texto dos links */
     text-decoration: none; /* Remove sublinhado padrão dos links */
     font-size: 24px; /* Tamanho da fonte dos links */
   }
@@ -68,12 +69,16 @@ header {
     justify-content: space-between;
 }
 
-.left, .middle {
-    width: 33%;
+.left {
+    width: 35%;
+}
+
+.middle {
+ width: 45%;
 }
 
 .right {
-  width: 25%;
+  width: 20%;
 }
 
 /* ---------- INICIO DA DIV ESQUERDA ---------- */
@@ -83,43 +88,73 @@ header {
 }
 
 .left h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin: 75px 0 0 0;
 }
 
 .left p {
+  width: 80%;
   font-size: 1.75rem;
+  font-weight: 300 ;
   margin: 25px 0 0 0;
 }
 
+.left button {
+  height: 50px;
+  width: 200px;
+  border-radius: 15px;
+  background-color: #7BA1F7;
+  font-size: 1.5rem;
+  margin: 50px 0 0 0;
+}
+
 /* ---------- FINAL DA DIV ESQUERDA ---------- */
+
+
+
+/* ---------- INICIIO DA DIV CENTRAL ---------- */
 
 .middle {
     overflow: hidden;
 }
 
+dotlottie-player {
+  width: 100%; /* Ajusta a largura da imagem para 100% da div */
+  height: auto; /* Mantém a proporção da imagem */
+  max-width: 100%; /* Garante que a imagem não ultrapasse os limites da div */
+}
+
+/* ---------- FINAL DA DIV CENTRAL ---------- */
+
+
+
 /* ---------- INIICIO DA DIV DIREITA ---------- */
 .apresentation .right {
-  display: flex;
-}
-
-.apresentation .right ol {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
   
 }
+
+.right .h1-top {
+  margin-top: 175px;
+}
+
+.right h1 {
+  margin: 50px;
+}
+
+.right .number {
+  border-bottom: blue solid;
+  margin: 0 15px 0 0;
+}
+
+.right span {
+  font-size: 2.5rem;
+}
+
+.right h1 {
+  font-size: 1rem;
+}
+
 /* ---------- FINAL DA DIV DIREITA ---------- */
-
-dotlottie-player {
-    width: 100%; /* Ajusta a largura da imagem para 100% da div */
-    height: auto; /* Mantém a proporção da imagem */
-    max-width: 100%; /* Garante que a imagem não ultrapasse os limites da div */
-  }
-
 
 
 .apresentation-codes {
