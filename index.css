@@ -103,8 +103,10 @@ header {
   height: 50px;
   width: 200px;
   border-radius: 15px;
-  background-color: #7BA1F7;
+  background-color: var(--main-blue-color); /*#7BA1F7*/
+  color: white;
   font-size: 1.5rem;
+  font-weight: bold;
   margin: 50px 0 0 0;
 }
 
@@ -158,6 +160,42 @@ dotlottie-player {
 
 
 .apresentation-codes {
+    display: flex;
     height: 650px;
     background-color: #FBF8F8;
+    border-radius: 25px;
+}
+
+.apresentation-codes .container-1 {
+  width: 25%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-1 ol {
+  list-style-type: none;
+}
+
+.container-1 ol li button {
+  width: 175px;
+  height: 50px;
+  margin: 25px 0;
+  background-color: var(--main-blue-color);
+  color: white;
+  font-size: 1.75rem;
+  font-weight: bold;
+  border-radius: 0 15px 15px 15px;
+}
+
+.apresentation-codes .container-2 {
+  width: 75%;
+  height: auto;
+
+  background-color: #e0e0e0;
+  
+
+  margin: 75px 75px 75px 0;
 }
