@@ -240,7 +240,7 @@ dotlottie-player {
 }
 
 .card {
-  width: 400px; /* largura do card */
+  width: 380px; /* largura do card */
   border: 1px solid #ccc; /* borda para destacar o card */
   border-radius: 5px; /* bordas arredondadas */
   overflow: hidden; /* garantir que a imagem não ultrapasse os limites do card */
