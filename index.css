@@ -146,29 +146,29 @@ dotlottie-player {
 
 
 /* ---------- INIICIO DA DIV DIREITA ---------- */
-/* .apresentation .right {
-  
-} */
 
-.right .h1-top {
-  margin-top: 175px;
+.apresentation .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.right h1 {
-  margin: 50px;
+.apresentation .right .aiaiai {
+  display: flex;
+  align-items: center;
+  max-height: 46px;
+  margin: 30px 50px;
+  gap: 15px;
 }
 
-.right .number {
+.apresentation .right .number123 {
+  font-size: 2rem;
   border-bottom: blue solid;
-  margin: 0 15px 0 0;
 }
 
-.right span {
-  font-size: 2.5rem;
-}
-
-.right h1 {
+.apresentation .right .text123 {
   font-size: 1rem;
+  font-weight: bold;
 }
 
 /* ---------- FINAL DA DIV DIREITA ---------- */
