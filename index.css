@@ -1,21 +1,11 @@
 :root {
     --main-blue-color: #407AFF;
-
-    /* --h1-size: 24px;
-    --h2-size: 18px;
-    --h3-size: 16px;
-    --h4-size: 14px;
-    --h5-size: 12px;
-    --h6-size: 10px; */
 }
 
 * {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	/* font-size: 100%; */
-	/* font: inherit; */
-	/* vertical-align: baseline; */
 }
 
 body{
@@ -25,76 +15,76 @@ body{
 }
 
 
-.site-notice {
-  background-color: #ffd700; /* Cor de fundo amarela */
-  color: #333; /* Cor do texto */
-  text-align: center; /* Alinhamento centralizado */
-  padding: 10px 0; /* Espaçamento interno */
-  position: fixed; /* Fixar a barra no topo da página */
-  top: 0; /* Posicionar no topo */
+.alerta {
+  background-color: #ffd700;
+  color: #333;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
   left: 0;
-  width: 100%; /* Largura total */
-  z-index: 9999; /* Z-index alto para garantir que fique acima de outros elementos */
+  width: 100%;
+  z-index: 9999;
 }
-
-
 
 header {
   border-bottom: solid 1px;
-    background-color: white; /* Cor de fundo do cabeçalho */
-    /* border-radius: 25px; */
-    color: black; /* Cor do texto */
-    padding: 10px 20px; /* Espaçamento interno do cabeçalho */
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
   
   .logo {
-    font-size: 32px; /* Tamanho da fonte da logo */
-    font-weight: bold; /* Negrito */
+    font-size: 32px;
+    font-weight: bold;
     margin: 0 0 0 25px;
   }
-  
+
+  .no-style {
+    color: inherit;
+    text-decoration: none;
+  }
+
   nav ul {
     list-style-type: none;
     margin: 0 25px 0 0;
   }
   
   nav ul li {
-    display: inline-block; /* Para alinhar os itens na horizontal */
-    margin-left: 20px; /* Espaçamento entre os itens */
+    display: inline-block;
+    margin-left: 20px;
   }
   
   nav ul li:first-child {
-    margin-left: 0; /* Remove o espaçamento à esquerda do primeiro item */
+    margin-left: 0;
   }
   
   nav ul li a {
-    color: black; /* Cor do texto dos links */
-    text-decoration: none; /* Remove sublinhado padrão dos links */
-    font-size: 24px; /* Tamanho da fonte dos links */
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
   }
 
-
-
-
-.apresentation {
+/* ---------- SEÇÃO HERO ---------- */ /* ---------- SEÇÃO HERO ---------- */
+.hero {
     display: flex;
     justify-content: space-between;
 }
 
-.left {
-    width: 35%;
-}
+  .left {
+      width: 35%;
+  }
 
-.middle {
- width: 45%;
-}
+  .middle {
+  width: 45%;
+  }
 
-.right {
-  width: 20%;
-}
+  .right {
+    width: 20%;
+  }
 
 /* ---------- INICIO DA DIV ESQUERDA ---------- */
 .left {
@@ -125,35 +115,27 @@ header {
   margin: 50px 0 0 0;
 }
 
-/* ---------- FINAL DA DIV ESQUERDA ---------- */
-
-
-
-/* ---------- INICIIO DA DIV CENTRAL ---------- */
+/* ---------- INICIO DA DIV CENTRAL ---------- */
 
 .middle {
     overflow: hidden;
 }
 
 dotlottie-player {
-  width: 100%; /* Ajusta a largura da imagem para 100% da div */
-  height: auto; /* Mantém a proporção da imagem */
-  max-width: 100%; /* Garante que a imagem não ultrapasse os limites da div */
+  width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
-/* ---------- FINAL DA DIV CENTRAL ---------- */
+/* ---------- INICIO DA DIV DIREITA ---------- */
 
-
-
-/* ---------- INIICIO DA DIV DIREITA ---------- */
-
-.apresentation .right {
+.hero .right {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.apresentation .right .aiaiai {
+.hero .right .container {
   display: flex;
   align-items: center;
   max-height: 46px;
@@ -161,18 +143,17 @@ dotlottie-player {
   gap: 15px;
 }
 
-.apresentation .right .number123 {
+.hero .right .number-container {
   font-size: 2rem;
   border-bottom: blue solid;
 }
 
-.apresentation .right .text123 {
+.hero .right .text-container {
   font-size: 1rem;
   font-weight: bold;
 }
 
-/* ---------- FINAL DA DIV DIREITA ---------- */
-
+/* ---------- FIM DA SEÇÃO HERO ---------- */ /* ---------- FIM DA SEÇÃO HERO ---------- */
 
 .apresentation-codes {
     display: flex;
@@ -218,7 +199,7 @@ dotlottie-player {
 
 
 
-
+/* ---------- SEÇÃO DE APRESENTAÇÃO DOS PROJETOS ---------- */ /* ---------- SEÇÃO DE APRESENTAÇÃO DOS PROJETOS ---------- */
 .apresentation-projects {
   margin: 0 0 50px 0;
 }
@@ -240,25 +221,25 @@ dotlottie-player {
 }
 
 .card {
-  width: 380px; /* largura do card */
-  border: 1px solid #ccc; /* borda para destacar o card */
-  border-radius: 5px; /* bordas arredondadas */
-  overflow: hidden; /* garantir que a imagem não ultrapasse os limites do card */
+  width: 390px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .image {
-  height: 300px; /* altura da imagem */
-  background-color: lightgray; /* fundo vermelho caso não tenha imagem */
+  height: 300px;
+  background-color: lightgray;
 }
 
 .text {
-  padding: 50px; /* espaçamento interno */
+  padding: 50px;
 }
 
 .text p {
-  margin: 0; /* removendo margens padrão */
+  margin: 0;
 }
-
+/* ---------- FIM DA SEÇÃO DE APRESENTAÇÃO DOS PROJETOS ---------- */
 
 
 
