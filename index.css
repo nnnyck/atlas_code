@@ -195,6 +195,16 @@ dotlottie-player {
   
 
   margin: 75px 75px 75px 0;
+  padding: 0 50px;
+
+  display: flex;
+  align-items: center;
+}
+
+.apresentation-codes .container-2 code {
+  font-size: 1.5rem;
+  /* margin: 0 0 0 -200px; */
+  padding: 0;
 }
 
 

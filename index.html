@@ -52,17 +52,77 @@
 <section class="apresentation-codes">
     <div class="container-1">
         <ol>
-            <li><button>HTML</button></li>
-            <li><button>CSS</button></li>
-            <li><button>Js</button></li>
-            <li><button>PHP</button></li>
-            <div></div>
+            <li><button onclick="showContent('html')">HTML</button></li>
+            <li><button onclick="showContent('css')">CSS</button></li>
+            <li><button onclick="showContent('js')">JavaScript</button></li>
+            <li><button onclick="showContent('php')">PHP</button></li>
         </ol>
     </div>
     <div class="container-2">
+        <div id="htmlContent">
+<code><pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;HTML Tutorial&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
 
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></code>
+        </div>
+        <div id="cssContent" style="display: none;">
+<code><pre>
+body {
+background-color: lightblue;
+}
+
+h1 {
+color: white;
+text-align: center;
+}
+
+p {
+font-family: verdana;
+}
+</pre></code>
+        </div>
+        <div id="jsContent" style="display: none;">
+<code><pre>
+&lt;button onclick="myFunction()"&gt;Click Me!&lt;/button&gt;
+
+&lt;script&gt;
+function myFunction() {
+    let x = document.getElementById("demo");
+    x.style.fontSize = "25px";
+    x.style.color = "red";
+}
+&lt;/script&gt;
+</pre></code>
+        </div>
+        <div id="phpContent" style="display: none;">
+<code><pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;?php
+echo "My first PHP script!";
+?&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></code>
+        </div>
     </div>
 </section>
+
+
+
 
 <section class="apresentation-projects">
     <h1>Projetos Realizados</h1>
@@ -117,5 +177,6 @@
     </div>
 </footer>
 
+<script src="./script.js"></script>
 </body>
 </html>
