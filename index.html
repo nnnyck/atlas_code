@@ -1,182 +1,62 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atlas Code - Home</title>
-
+    <title>Document</title>
     <link rel="stylesheet" href="./index.css">
-    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-    <div class="alerta">
-        <p>O site encontra-se na fase inicial de desenvolvimento, por favor volte mais tarde!! </p>
+<nav>
+  <ul class="sidebar">
+    <li onclick="hideSidebar(event)"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+    <li><a href="#">Sobre</a></li>
+    <li><a href="#">Projetos</a></li>
+    <li><a href="#">Tutoriais</a></li>
+  </ul>
+  <ul>
+    <li><a href="#">AtlasCode</a></li>
+    <li class="hideOnMobile"><a href="#">Sobre</a></li>
+    <li class="hideOnMobile"><a href="#">Projetos</a></li>
+    <li class="hideOnMobile"><a href="#">Tutoriais</a></li>
+    <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <div class="container-img_left"> <!--IMAGEM ESCONDIDA NA TELA, INTUITO APENAS DE PREENCHER ESPAÇO-->
+    <img src="./img/download__1_-removebg-preview.png" alt="">
+  </div>
+
+  <div class="banner">
+    <h1>Bem vindo(a)!</h1>
+    <!-- <input class="search-bar" type="text" placeholder="Pesquise Algum Item!"> -->
+
+    <div class="search">
+      <input type="text" id="searchInput" placeholder="Pesquisar">
+      <label for="searchInput">
+        <span class="material-symbols-outlined">search</span>
+      </label>
     </div>
 
-<header>
-    <div class="logo"><a class="no-style" href="./index.html">AtlasCode</a></div>
-    <nav>
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="#">Tutoriais</a></li>
-        </ul>
-    </nav>
-</header>
+    <p>Elementos de variadas Linguagens!</p>
+    <!-- Esferas serão geradas dentro do banner -->
+  </div>
 
-<section class="hero">
-    <div class="left">
-        <h1>Bem-vindo ao <br>Atlas Code</h1>
-        <p>Este projeto está sendo desenvolvido com intuito de ajudar pessoas a saberem por onde começar a estudar. E também serve como apoio para me auxiliar nos estudos.</p>
-        <button>Trilha</button>
-    </div>
-    <div class="middle">
-        <dotlottie-player 
-            src="https://lottie.host/204ad61f-14de-4b7a-aaca-a922551158e0/pancHPMAp4.lottie" 
-            background="transparent" 
-            speed="1" 
-            style="width: 700px; height: 600px" 
-            direction="1" 
-            playMode="normal" 
-            loop
-            autoplay>
-        </dotlottie-player>
-    </div>
-    <div class="right">
-        <div class="container"><h1 class="number-container">01</h1> <span class="text-container">100 horas cursadas</span></div>
-        <div class="container"><h1 class="number-container">02</h1> <span class="text-container">Nível Júnior</span></div>
-        <div class="container"><h1 class="number-container">03</h1> <span class="text-container">3 Projetos Concluídos</span></div>
-    </div>
+  <div class="container-img">
+    <img src="./img/download__1_-removebg-preview.png" alt="">
+  </div>
+</div>
+
+<section class="start-learning">
+  <h1>Comece aprendendo</h1>
+  <div>
     
+  </div>
 </section>
 
-<section class="apresentation-codes">
-    <div class="container-1">
-        <ol>
-            <li><button onclick="showContent('html')">HTML</button></li>
-            <li><button onclick="showContent('css')">CSS</button></li>
-            <li><button onclick="showContent('js')">JavaScript</button></li>
-            <li><button onclick="showContent('php')">PHP</button></li>
-        </ol>
-    </div>
-    <div class="container-2">
-        <div id="htmlContent">
-<code><pre>
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;title&gt;HTML Tutorial&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-
-&lt;h1&gt;This is a heading&lt;/h1&gt;
-&lt;p&gt;This is a paragraph.&lt;/p&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-</pre></code>
-        </div>
-        <div id="cssContent" style="display: none;">
-<code><pre>
-body {
-background-color: lightblue;
-}
-
-h1 {
-color: white;
-text-align: center;
-}
-
-p {
-font-family: verdana;
-}
-</pre></code>
-        </div>
-        <div id="jsContent" style="display: none;">
-<code><pre>
-&lt;button onclick="myFunction()"&gt;Click Me!&lt;/button&gt;
-
-&lt;script&gt;
-function myFunction() {
-    let x = document.getElementById("demo");
-    x.style.fontSize = "25px";
-    x.style.color = "red";
-}
-&lt;/script&gt;
-</pre></code>
-        </div>
-        <div id="phpContent" style="display: none;">
-<code><pre>
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;body&gt;
-
-&lt;?php
-echo "My first PHP script!";
-?&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-</pre></code>
-        </div>
-    </div>
-</section>
-
-
-
-
-<section class="apresentation-projects">
-    <h1>Projetos Realizados</h1>
-
-    <div class="container">
-        <!-- card 1 -->
-        <div class="card">
-            <div class="image">
-            <!-- Aqui você pode inserir sua imagem ou um fundo vermelho -->
-            </div>
-        <div class="text">
-            <p></p>
-        </div>
-        </div>
-
-        <!-- card 2 -->
-        <div class="card">
-            <div class="image">
-            <!-- Aqui você pode inserir sua imagem ou um fundo vermelho -->
-            </div>
-        <div class="text">
-            <p></p>
-        </div>
-        </div>
-
-        <!-- card 3 -->
-        <div class="card">
-            <div class="image">
-            <!-- Aqui você pode inserir sua imagem ou um fundo vermelho -->
-            </div>
-        <div class="text">
-            <p></p>
-        </div>
-        </div>
-
-        <!-- card 1 -->
-        <div class="card">
-            <div class="image">
-            <!-- Aqui você pode inserir sua imagem ou um fundo vermelho -->
-            </div>
-        <div class="text">
-            <p></p>
-        </div>
-        </div>
-    </div>  
-</section>
-
-<footer>
-    <div class="footer-top"></div>
-    <div class="footer-bottom">
-       <span>© Livre de Direitos Autorais - 2024</span> 
-    </div>
-</footer>
-
-<script src="./script.js"></script>
-</body>
+<script src="script.js"></script>
+  </body>
 </html>
