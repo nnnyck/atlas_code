@@ -206,15 +206,18 @@ nav li:first-child {
 }
 
 .container-ml .first {
-  background-color: blue;
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
 }
 
 .container-ml .second {
-  background-color: red;
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
 }
 
 .container-ml .third {
-  background-color: green;
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
 }
 
 
