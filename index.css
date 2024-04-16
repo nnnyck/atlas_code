@@ -203,7 +203,7 @@ nav li:first-child {
   .second,
   .third {
   height: 390px;
-  width: 390px;
+  width: 25%;
   border-radius: 20px;
   padding: 30px;
 }
