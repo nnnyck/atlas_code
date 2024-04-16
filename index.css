@@ -182,7 +182,7 @@ nav li:first-child {
  } */
 
 .main-languages {
-  margin: 75px 50px 50px 50px;
+  margin: 75px 50px;
 }
 
 .main-languages h1 {
@@ -198,7 +198,10 @@ nav li:first-child {
   margin-top: 125px;
 }
  
-.container-ml div {
+.container-ml
+  .first,
+  .second,
+  .third {
   height: 400px;
   width: 25%;
   border-radius: 20px;
@@ -219,6 +222,40 @@ nav li:first-child {
   background-color: white;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
 }
+
+/* .container-ml .lang-img {
+  width: 100px;
+  border-radius: 50px;
+} */
+
+.circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  background-color: #ccc; /* Cinza */
+  margin: 50px 0 25px 50px;
+}
+
+.lang-img {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%; /* Ajuste o tamanho da imagem conforme necessário */
+  height: auto; /* Isso garante que a altura seja ajustada automaticamente */
+  object-fit: cover;
+}
+
+.container-ml .first
+              .second
+              .third
+,h2, p {
+  margin: 0 0 0 50px;
+}
+
+
 
 
 
