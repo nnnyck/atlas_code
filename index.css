@@ -202,8 +202,8 @@ nav li:first-child {
   .first,
   .second,
   .third {
-  height: 400px;
-  width: 25%;
+  height: 390px;
+  width: 390px;
   border-radius: 20px;
   padding: 30px;
 }
@@ -234,7 +234,7 @@ nav li:first-child {
   border-radius: 50%;
   overflow: hidden;
   position: relative;
-  background-color: #ccc; /* Cinza */
+  background-color: #E6E6E6; /* Cinza */
   margin: 50px 0 25px 50px;
 }
 
@@ -252,7 +252,7 @@ nav li:first-child {
               .second
               .third
 ,h2, p {
-  margin: 0 0 0 50px;
+  margin: 0 50px 0 50px;
 }
 
 
